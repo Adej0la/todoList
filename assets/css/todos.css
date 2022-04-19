@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: monospace;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #ed4264 10%, #ffedbc 90%);
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  color: #2980b9;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  border: none;
+}
+
+li {
+  background: #fff;
+  height: 2em;
+  line-height: 2em;
+  color: #666;
+}
+
+span {
+  background-color: #ed4264;
+  display: inline-block;
+  height: 2em;
+  margin-right: 25px;
+  text-align: center;
+  color: black;
+  width: 0;
+  opacity: 0;
+  transition: opacity 300ms linear, width 300ms linear;
+}
+
+span:hover {
+  width: 3em;
+  opacity: 1;
+}
+
+.todo__container {
+  width: 400px;
+  margin: 10rem auto 0;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  margin: 0;
+  background: #2980b9;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.fa-plus {
+  float: right;
+}
+
+input:focus {
+  background: white;
+  border: 2px solid #2980b9;
+  outline: none;
+}
+
+.todo__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li:nth-of-type(2n) {
+  background: #f7f7f7;
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
